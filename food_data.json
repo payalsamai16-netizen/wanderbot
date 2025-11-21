@@ -1,0 +1,121 @@
+{
+  "delhi": [
+    "🍛 Chole Bhature – spicy chickpeas with fried bread",
+    "🥞 Paratha – layered flatbread with butter or stuffing",
+    "🍗 Butter Chicken – creamy tomato chicken curry",
+    "🥤 Lassi – traditional sweet yogurt drink",
+    "🥙 Gol Gappa – crispy puris filled with tangy water"
+  ],
+
+  "mumbai": [
+    "🥪 Vada Pav – spicy potato fritter in a bread bun",
+    "🍲 Pav Bhaji – buttery mashed vegetable curry with buns",
+    "🥗 Bhel Puri – puffed rice snack with chutneys",
+    "🍢 Misal Pav – spicy curry with sprouts and bread",
+    "🍧 Falooda – sweet dessert with vermicelli and rose syrup"
+  ],
+
+  "kolkata": [
+    "🍡 Rosogolla – soft syrupy cheese balls",
+    "🥙 Kathi Roll – paratha roll filled with meat or paneer",
+    "🐟 Macher Jhol – Bengali fish curry",
+    "🍮 Mishti Doi – sweet yogurt dessert",
+    "🍚 Khichuri – rice and lentil porridge"
+  ],
+
+  "chennai": [
+    "🥞 Dosa – thin crispy rice pancake",
+    "🍛 Sambar – lentil stew with vegetables",
+    "🍚 Pongal – rice and lentil dish with ghee",
+    "🥣 Rasam – spicy tamarind soup",
+    "☕ Filter Coffee – traditional South Indian coffee"
+  ],
+
+  "hyderabad": [
+    "🍗 Hyderabadi Biryani – aromatic rice with meat and spices",
+    "🍢 Haleem – slow-cooked meat and lentil dish",
+    "🍮 Double Ka Meetha – bread pudding dessert",
+    "🥣 Mirchi Ka Salan – spicy chili curry",
+    "🍹 Irani Chai – special tea served with biscuits"
+  ],
+
+  "jaipur": [
+    "🍛 Dal Baati Churma – lentils, baked wheat balls, and sweet mix",
+    "🍰 Ghewar – disc-shaped sweet made from flour and syrup",
+    "🍖 Laal Maas – spicy red mutton curry",
+    "🥣 Ker Sangri – desert beans and berries curry",
+    "🥤 Lassi – thick yogurt drink"
+  ],
+
+  "ahmedabad": [
+    "🍰 Dhokla – steamed gram flour cake",
+    "🥠 Khandvi – rolled gram flour snack",
+    "🍳 Fafda Jalebi – crispy snack with sweet syrupy jalebi",
+    "🥗 Thepla – spiced flatbread",
+    "🍲 Undhiyu – mixed vegetable curry"
+  ],
+
+  "goa": [
+    "🐟 Goan Fish Curry – tangy coconut-based curry",
+    "🍛 Prawn Balchao – spicy prawn pickle curry",
+    "🍰 Bebinca – layered Goan dessert",
+    "🍗 Chicken Cafreal – green masala chicken",
+    "🍹 Feni – local cashew liquor"
+  ],
+
+  "amritsar": [
+    "🥟 Amritsari Kulcha – stuffed bread cooked in tandoor",
+    "🍵 Lassi – sweet yogurt drink",
+    "🌽 Makki Di Roti – cornmeal flatbread",
+    "🥬 Sarson Da Saag – mustard leaf curry",
+    "🍚 Langar Food – simple community meal from Golden Temple"
+  ],
+
+  "paris": [
+    "🥐 Croissant – buttery flaky pastry",
+    "🥖 Baguette – long crusty French bread",
+    "🍮 Crêpe – thin pancake with sweet or savory fillings",
+    "🍰 Macarons – colorful almond cookies",
+    "🍲 Ratatouille – vegetable stew"
+  ],
+
+  "rome": [
+    "🍝 Spaghetti Carbonara – pasta with eggs, cheese, and pancetta",
+    "🍕 Margherita Pizza – classic Italian pizza",
+    "🍦 Gelato – traditional Italian ice cream",
+    "🍅 Bruschetta – grilled bread with tomatoes and olive oil",
+    "🥗 Caprese Salad – tomato, mozzarella, and basil"
+  ],
+
+  "tokyo": [
+    "🍣 Sushi – vinegared rice with fish or vegetables",
+    "🍜 Ramen – noodle soup with broth and toppings",
+    "🍤 Tempura – deep-fried seafood and vegetables",
+    "🥢 Takoyaki – octopus-filled snack balls",
+    "🍱 Bento – Japanese lunch box meal"
+  ],
+
+  "london": [
+    "🍟 Fish and Chips – fried fish with potatoes",
+    "🥧 Shepherd’s Pie – minced meat with mashed potato topping",
+    "🥞 Full English Breakfast – eggs, bacon, beans, toast, sausage",
+    "🍖 Sunday Roast – roasted meat with vegetables",
+    "🍰 Sticky Toffee Pudding – sweet dessert with caramel sauce"
+  ],
+
+  "new york": [
+    "🍕 New York Pizza – thin crust cheese pizza",
+    "🥯 Bagel with Cream Cheese – classic NYC breakfast",
+    "🍔 Cheeseburger – juicy beef burger with cheese",
+    "🌭 Hot Dog – grilled sausage in bun",
+    "🍰 Cheesecake – creamy dessert from Brooklyn"
+  ],
+
+  "dubai": [
+    "🍖 Shawarma – grilled meat wrap",
+    "🍚 Mandi – rice and meat dish with Arabic spices",
+    "🍢 Falafel – fried chickpea balls",
+    "🥣 Hummus – chickpea paste with olive oil",
+    "🍞 Khubz – Arabic flatbread"
+  ]
+}

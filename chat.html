@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderBot Chat</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .chat-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .user-msg, .bot-msg {
+            max-width: 60%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .user-msg {
+            background-color: #dcf8c6;
+            align-self: flex-end;
+        }
+        .bot-msg {
+            background-color: #fff;
+            align-self: flex-start;
+            border: 1px solid #ddd;
+        }
+        .input-area {
+            display: flex;
+            padding: 10px;
+            background-color: white;
+            border-top: 1px solid #ccc;
+        }
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .logout {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Welcome, {{ username }} 🌍 | <a href="/logout" class="logout">Logout</a>
+    </div>
+
+    <div class="chat-container" id="chat-box">
+        <div class="bot-msg">👋 Hi {{ username }}! I'm WanderBot. Ask me about any city or country — I’ll tell you the weather, attractions, and more!</div>
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="user-input" placeholder="Ask me about a place...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            let input = document.getElementById("user-input");
+            let userMsg = input.value.trim();
+            if (userMsg === "") return;
+
+            // Display user message
+            let chatBox = document.getElementById("chat-box");
+            chatBox.innerHTML += `<div class='user-msg'>${userMsg}</div>`;
+            input.value = "";
+
+            // Send message to Flask backend
+            let response = await fetch("/get", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: userMsg })
+            });
+            let data = await response.json();
+
+            // Display bot reply
+            chatBox.innerHTML += `<div class='bot-msg'>${data.reply}</div>`;
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    </script>
+</body>
+</html>
